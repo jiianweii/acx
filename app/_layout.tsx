@@ -13,7 +13,10 @@ import { useColorScheme } from "@/hooks/useColorScheme";
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    JosefinSans: require("../assets/fonts/JosefinSans-Regular.ttf"),
+    "JosefinSans-Regular": require("../assets/fonts/JosefinSans-Regular.ttf"),
+    "JosefinSans-Medium": require("../assets/fonts/JosefinSans-Medium.ttf"),
+    "JosefinSans-Bold": require("../assets/fonts/JosefinSans-Bold.ttf"),
+    "JosefinSans-SemiBold": require("../assets/fonts/JosefinSans-SemiBold.ttf"),
   });
 
   if (!loaded) {
